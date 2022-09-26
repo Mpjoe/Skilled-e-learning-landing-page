@@ -1,0 +1,403 @@
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*------Styling CSS Code------*/
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(236, 89%, 96%));
+  font-family: "Plus Jakarta Sans"; sans serif;
+}
+
+h1, h2, h3 { /* Text title color */
+  color: hsl(233,54%,16%);
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.187rem;
+  font-weight: 800;
+}
+
+h2{
+  font-size: 1.75rem;
+}
+
+h3{
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+h4{
+  color: hsl(341, 92%, 62%);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+
+}
+
+p{
+  font-size: 1rem;
+  color: hsl(232,10%,56%);
+  margin-top: 1rem;
+  line-height: 1.625rem;
+  line-break: auto;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*-----For 375 Mobile-----*/
+
+.head-card_container{
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title-content{
+font-size: 2.5rem;
+margin: 2.375rem 1rem 0rem 1rem;
+text-align: left;
+line-break: auto;
+}
+
+.title-content-paragraph{ /* Put margin on top paragraph */
+margin: 1.5rem 0rem;
+}
+
+.card-image-hero{
+  display: flex;
+  justify-content: center;
+  margin-top: 2.875rem;
+}
+
+.global-card-container{
+display: flex;
+justify-content: center;
+margin-bottom: 5rem;
+}
+
+.card-title-and-paragraph{
+width: 21.437rem;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+margin: 0rem 1rem 0rem 1rem;
+}
+
+.title-popular-courses{
+  background-color: hsl(13, 100%, 64%);
+  background-image: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+  border-radius: 0.625rem;
+  max-width: 21.437rem;
+  padding: 1.5rem 5.625rem 2rem 1.75rem;
+  line-height: 2rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 3.062rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card-paragraph-title{
+  color: hsl(233,54%,16%);
+  font-size: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.937rem;
+  max-width: 21.437rem;
+  height: 16.187rem; /* Need to delete the height if possible */
+  padding: 1rem 1.75rem 2rem 1.75rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0px 15px 50px hsl(0, 0%, 96%);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.footer-card-container{
+  background-color: hsl(233,54%,16%);
+  max-width: 100%;
+  padding: 2.25rem 1rem;
+}
+
+.footer-skilled{ /* Change the color of skilled word to white */
+  color: hsl(0, 0%, 100%);
+}
+
+.button {
+  background-color: lightblue;
+  border-radius: 31.5px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 2.375rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn1 {
+  background-color: hsl(233,54%,16%);
+}
+
+.btn2 {
+  background-color: hsl(322, 87%, 55%);
+  background-image: linear-gradient(hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+}
+
+.btn3 {
+  background-color: hsl(237, 100%, 64%);
+  background-image: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+}
+
+/*-----For 1440 Desktop-----*/
+
+@media (min-width: 1440px){
+
+.head-card_container{
+    margin: 1.5rem 10.312rem 0rem 10.312rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.card-title-content{
+  font-size: 3.5rem;
+  max-width: 31.875rem;
+  margin: 11.562rem 6.875rem 14.062rem 10.312rem;
+  text-align: left;
+  line-break: auto;
+  }
+
+.card-image-hero{
+      max-width: 62rem;
+    }
+
+.global-card-container{
+    display: flex;
+    justify-content: center;
+    }
+
+.card-title-img{
+display: flex;
+align-items: flex-end;
+}
+
+.card-title-and-paragraph{
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title-popular-courses{
+    background-color: hsl(13, 100%, 64%);
+    background-image: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+    border-radius: 0.625rem;
+    max-width: 21.875rem;
+    padding: 2.75rem 1.312rem 0rem 2rem;
+    line-height: 2.5rem;
+    column-gap: 1.875rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    display: flex;
+    line-break: auto;
+    margin: 5rem 0.875rem 0rem 0.875rem;
+  }
+
+  .card-paragraph-title{
+    color: hsl(233,54%,16%);
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.937rem;
+    max-width: 21.875rem;
+    padding: 0rem 2rem 2.5rem 2rem;
+    column-gap: 1.875rem;
+    box-shadow: 0px 15px 50px hsl(0, 0%, 96%);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 5rem 0.875rem 0rem 0.875rem;
+  }
+
+  .footer-card-container{
+    margin-top: 8.75rem;
+    padding: 2rem 10.312rem;
+  }
+
+  h3{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  p{
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+    line-height: 1.75rem;
+    line-break: auto;
+  }
+
+  h4{
+    color: hsl(341, 92%, 62%);
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.125rem;
+  }
+}
+
+/*-----For 768 Tablet-----*/
+
+@media (min-width: 768px){
+
+  .head-card_container{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-title-content{
+  font-size: 2.5rem;
+  max-width: 24.875rem;
+  margin: 6.187rem 0rem 14.062rem 2.437rem;
+  text-align: left;
+  line-break: auto;
+  }
+
+  .title-content-paragraph{
+    margin-top: 1.437rem;
+  }
+
+  .card-image-hero{
+    max-width: 40.06rem;
+  }
+
+  .global-card-container{
+  display: flex;
+  justify-content: center;
+  }
+
+  .card-title-img{
+  display: flex;
+  align-items: flex-end;
+  }
+
+  .card-title-and-paragraph{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .title-popular-courses{
+      background-color: hsl(13, 100%, 64%);
+      background-image: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+      border-radius: 0.625rem;
+      max-width: 21.187rem;
+      padding: 2.75rem 1.312rem 0rem 2rem;
+      line-height: 2.5rem;
+      column-gap: 1.875rem;
+      color: hsl(0, 0%, 100%);
+      font-size: 1.5rem;
+      align-items: none;
+      display: flex;
+      line-break: auto;
+      margin: 5rem 0.875rem 0rem 0.875rem;
+    }
+
+  .card-paragraph-title{
+    color: hsl(233,54%,16%);
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.937rem;
+    max-width: 21.875rem;
+    padding: 0rem 1.375rem 2rem 2rem;
+    column-gap: 1.875rem;
+    box-shadow: 0px 15px 50px hsl(0, 0%, 96%);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 5rem 0.875rem 0rem 0.875rem;
+  }
+
+  .footer-card-container{
+    margin-top: 5.375rem;
+    padding: 2.25rem 2.5rem;
+  }
+
+  h3{
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  p{
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.75rem;
+    line-break: auto;
+  }
+
+  h4{
+    color: hsl(341, 92%, 62%);
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+  }
+}
